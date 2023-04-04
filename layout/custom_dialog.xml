@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:background="@drawable/alert_bg">
+
+    <TextView
+        android:id="@+id/tvWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:text="@string/are_you_sure_to_continue"/>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvWarning"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/yes"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/no"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+</RelativeLayout>
